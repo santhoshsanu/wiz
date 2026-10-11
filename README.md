@@ -48,3 +48,26 @@ Defines requirements for establishing and continually improving an Information S
 | CIS | Center for Internet Security | Secure configuration benchmarks | Hardening cloud, OS, and Kubernetes settings |
 | PCI DSS | Payment Card Industry Data Security Standard | Payment card data protection | Organizations handling cardholder data |
 | ISO 27001 | International information security management standard | Information Security Management System (ISMS) | Formal, certifiable security management |
+
+
+## AWS GuardDuty
+
+AWS GuardDuty is a managed threat detection service that continuously monitors AWS accounts, workloads, and supported data sources to identify potential security threats.
+
+It analyzes data such as CloudTrail management events, VPC Flow Logs, and DNS query logs using machine learning, anomaly detection, and threat intelligence to identify suspicious activities, such as unauthorized API calls, compromised EC2 instances, malicious IP communication, and potential cryptocurrency mining.
+
+When GuardDuty detects suspicious activity, it generates a security finding containing details about the threat, its severity, and the affected resource.
+
+We can integrate GuardDuty with AWS Security Hub for centralized security visibility and Amazon EventBridge to automate incident response. For example, when a high-severity finding is generated, EventBridge can trigger an SNS notification to alert the security team or invoke a Lambda function to perform an approved remediation action.
+
+This helps us detect potential threats early and respond to security incidents more efficiently.
+
+
+
+
+
+
+
+
+
+
