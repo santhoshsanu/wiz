@@ -62,7 +62,14 @@ We can integrate GuardDuty with AWS Security Hub for centralized security visibi
 
 This helps us detect potential threats early and respond to security incidents more efficiently.
 
+## AWS GuardDuty
 
+Important points to remember
+Service	Purpose
+GuardDuty	Detects threats and provides finding details.
+CloudTrail	Investigates AWS API calls and account activity.
+VPC Flow Logs	Investigates network traffic metadata, including source/destination IPs and ports.
+Incident ticket	Tracks severity, priority, investigation, and remediation.
 
 
 
